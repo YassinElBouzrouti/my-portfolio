@@ -1,0 +1,50 @@
+.home {
+    padding: 0 8rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-shrink: 1;
+  }
+  
+
+  
+  .home > h1 {
+    font-size: 5.5rem;
+    background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .home > a {
+    font-size: 1.5rem;
+    padding: 2px;
+    border-radius: 2%;
+  }
+  :hover a{
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+  @media (max-width:1025px){
+    .home{
+        padding: 0 4rem;
+        font-size: 3.5rem;
+        margin-top: 5%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .home {
+      padding: 0 1rem;
+      max-width: 80vh;
+    }
+    .home h1{
+        font-size: 1.5rem;
+    }
+    .home p{
+        font-size: small;
+    }
+  }

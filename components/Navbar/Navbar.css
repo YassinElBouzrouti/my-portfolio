@@ -1,0 +1,43 @@
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8rem;
+    flex-wrap: wrap;
+  }
+nav img{
+    padding: 3px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+}
+  
+  @media (max-width: 770px) {
+    nav {
+      padding: 0 2rem;
+    }
+  }
+  
+  nav > ul {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  nav button {
+    background: none;
+    border: none;
+    color: inherit;
+    transform: scale(1.5);
+  }
+  
+  nav a {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: var(--highlight);
+  }
